@@ -1,0 +1,27 @@
+1) Activer l'exécution de scripts:
+    - Ouvrir le menu Windows > taper "PowerShell" > Clic droit > "Exécuter en tant qu'administrateur"
+    - Entrer "set-executionpolicy RemoteSigned"
+    - Fermer la fenêtre
+
+2) Installer Python 3.11.4:
+    - Exécuter "python-3.11.4-amd64.exe" et suivre la procédure d'installation
+
+3) Installation des librairies Python
+    - Clic droit sur "install.ps1" > "Exécuter avec PowerShell" (réessayer si ça ne marche pas)
+    - Attendre la fermeture automatique de la console
+
+4) Choix des paramètres
+    - Renseigner les comptes Reddit à upvoter dans le fichier "targets.txt"
+    - Clic droit sur "main.py" > ouvrir avec bloc notes
+    - Dans la section "PARAMETERS", choisir le nombre de bots à utiliser (par défaut entre 20 et 30, 40 sont disponibles), 
+        et le nombre de posts à upvoter (par défaut les 3 posts les plus récents).
+
+4) Lancer le script
+    - Clic droit sur "run.ps1" > "Exécuter avec PowerShell"
+
+Notes: 
+    - Ne pas toucher à la fenêtre qui s'ouvre lors de l'exécution (possible de la mettre en arrière-plan mais ne pas redimensionner etc...)
+    - Les upvotes se feront sur un peu plus d'une heure quel que soit le nombre de bots/posts (plus de bots -> moins de temps d'attente entre chaque bot)
+    - La console qui s'ouvre lors de l'exécution de "run.ps1" contient les logs des opérations effectuées.
+        Parfois, le processus peut être interrompu par un pop-up "choisissez vos centres d'intérêt". Dans ce cas, fermer le pop-up ou
+        le remplir pour être tranquille avec le bot en question, revenir sur la console et appuyer sur "entrée" pour reprendre le processus

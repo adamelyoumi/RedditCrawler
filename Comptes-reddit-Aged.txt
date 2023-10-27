@@ -1,0 +1,2 @@
+Write accounts with the following format:
+username:password
